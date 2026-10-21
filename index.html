@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Flowers For You - Handcrafted floral arrangements, heirloom wildflower seeds, and sustainable botanical gifts designed to inspire your home and garden.">
+  <meta name="keywords" content="flowers, heirloom seeds, flower packets, florist, botanical gifts, wildflower seeds, gardening">
+  <meta name="author" content="Flowers For You">
+  <title>Flowers For You | Handcrafted Blooms & Heirloom Seeds</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="./assets/rose-icon.webp">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Relative Stylesheet Link -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Accessible Skip Navigation Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Announcement Bar Landmark -->
+  <aside class="announcement-bar" aria-label="Special Announcements">
+    <div class="container announcement-content">
+      <span class="announcement-tag" aria-hidden="true">🌸 Seasonal Offer</span>
+      <p class="announcement-text">
+        Free shipping on all heirloom seed packets for orders over $35. Hand-packed with care!
+      </p>
+      <a href="#products" class="announcement-cta" aria-label="Shop seed packets with free shipping">Shop Seeds</a>
+    </div>
+  </aside>
+
+  <!-- Header / Navbar Landmark -->
+  <header class="site-header" id="header" role="banner">
+    <div class="container header-container">
+      <!-- Brand Logo & Title -->
+      <a href="./index.html" class="brand-link" aria-label="Flowers For You Homepage">
+        <img src="./assets/Icon.webp" alt="Flowers For You Floral Logo" class="brand-logo" width="46" height="46">
+        <div class="brand-text">
+          <span class="brand-title">Flowers For You</span>
+          <span class="brand-tagline">Artisanal Florals & Seeds</span>
+        </div>
+      </a>
+
+      <!-- Primary Navigation -->
+      <nav id="primary-navigation" class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list" id="nav-list">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#products" class="nav-link">Seeds & Bouquets</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Services & Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#interactive" class="nav-link">Plant Finder</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header Utilities (Theme Toggle & Mobile Menu Button) -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-icon theme-toggle" type="button" aria-label="Switch between light and dark theme" aria-pressed="false" title="Toggle theme">
+          <svg class="theme-icon sun-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon moon-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#products" class="btn btn-sm btn-primary nav-cta-desktop">Shop Now</a>
+
+        <button id="menu-toggle" class="btn-icon menu-toggle" type="button" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="hamburger-line" aria-hidden="true"></span>
+          <span class="hamburger-line" aria-hidden="true"></span>
+          <span class="hamburger-line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content" class="main-layout">
+
+    <!-- 1. Hero Section -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-media-wrapper" aria-hidden="true">
+        <img src="./assets/background.jpg" alt="" class="hero-bg-image" fetchpriority="high">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <img src="./assets/rose-icon.webp" alt="" class="badge-icon" aria-hidden="true" width="22" height="22">
+            <span>Hand-Selected Botanicals & Heirloom Seeds</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-heading">
+            Handcrafted Blooms & Heirloom Seeds For Every Moment
+          </h1>
+
+          <p class="hero-description">
+            Bring nature’s timeless tranquility into your home. We curate pesticide-free fresh bouquets, rare heirloom pollinator seed packets, and organic garden essentials crafted for blossoming spaces.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#products" class="btn btn-primary btn-lg" aria-label="Explore our curated flower seeds and bouquets">
+              Explore Our Seeds
+            </a>
+            <a href="#interactive" class="btn btn-outline-light btn-lg" aria-label="Find your perfect plant match with our interactive tool">
+              Interactive Bloom Finder
+            </a>
+          </div>
+
+          <!-- Feature Highlights / Trust Badges -->
+          <ul class="hero-highlights" aria-label="Store highlights">
+            <li class="highlight-item">
+              <span class="highlight-check" aria-hidden="true">✓</span>
+              <span>100% Non-GMO Heirloom Seeds</span>
+            </li>
+            <li class="highlight-item">
+              <span class="highlight-check" aria-hidden="true">✓</span>
+              <span>Eco-Friendly Recycled Packaging</span>
+            </li>
+            <li class="highlight-item">
+              <span class="highlight-check" aria-hidden="true">✓</span>
+              <span>High Germination Rate Guaranteed</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Core Content: About & Philosophy Subsection -->
+    <section id="about" class="about-section" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-intro text-center">
+          <span class="section-badge">Our Roots</span>
+          <h2 id="about-title" class="section-title">Rooted in Passion, Grown with Purpose</h2>
+          <p class="section-subtitle">
+            Flowers For You was born out of love for sustainable horticulture and the simple joy of watching tiny seeds unfurl into vibrant living beauty.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card">
+            <div class="card-icon-wrapper" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Pure Heirloom Strains</h3>
+            <p class="card-text">
+              We never use synthetic coatings or genetically modified seeds. Every variety in our seed packets is open-pollinated, naturally hardy, and selected to preserve biodiversity.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <div class="card-icon-wrapper" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Pollinator Paradise</h3>
+            <p class="card-text">
+              Our curated seed mixtures are specially tailored to feed vital pollinators—including native honeybees, bumblebees, swallowtail butterflies, and hummingbirds.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <div class="card-icon-wrapper" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+              </svg>
+            </div>
+            <h3 class="card-title">Green Thumb Support</h3>
+            <p class="card-text">
+              Whether you possess a sunny windowsill or an expansive backyard meadow, each purchase comes with our clear step-by-step planting guide and seasonal care tips.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Core Content: Products Showcase -->
+    <section id="products" class="products-section" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-intro">
+          <span class="section-badge">Curated Offerings</span>
+          <h2 id="products-title" class="section-title">Heirloom Seed Packets & Handcrafted Blooms</h2>
+          <p class="section-subtitle">
+            Explore our signature collection of botanical seed packets and fresh floral creations, carefully prepared for home gardeners and thoughtful gift-givers.
+          </p>
+        </div>
+
+        <!-- Product Cards Grid -->
+        <div class="products-grid">
+
+          <!-- Product 1: Seed Packet 1 -->
+          <article class="product-card" data-category="seeds" aria-labelledby="prod-1-title">
+            <div class="product-badge-group">
+              <span class="product-badge bestseller">Bestseller</span>
+              <span class="product-badge organic">Organic Mix</span>
+            </div>
+            <figure class="product-figure">
+              <img src="./assets/seed-packet1.jpg" alt="Botanical Wildflower Meadow Heirloom Seed Packet with colorful floral illustration" class="product-img" loading="lazy" width="554" height="554">
+            </figure>
+            <div class="product-body">
+              <div class="product-meta">
+                <span class="product-category">Heirloom Seed Mix</span>
+                <span class="product-rating" aria-label="Rated 4.9 out of 5 stars">★ 4.9 (128)</span>
+              </div>
+              <h3 id="prod-1-title" class="product-title">Sunburst Wildflower Meadow Seed Packet</h3>
+              <p class="product-desc">
+                An enchanting blend of open-pollinated poppies, cosmos, coreopsis, and bachelor buttons. Effortlessly transforms bare soil into a thriving pollinator sanctuary.
+              </p>
+              <ul class="product-specs" aria-label="Sunburst Wildflower Specifications">
+                <li><strong>Light:</strong> Full Sun (6+ hrs)</li>
+                <li><strong>Germination:</strong> 7–14 Days</li>
+                <li><strong>Bloom Time:</strong> Spring through Autumn</li>
+              </ul>
+              <div class="product-footer">
+                <div class="product-price">
+                  <span class="price-current">$8.50</span>
+                  <span class="price-unit">/ packet</span>
+                </div>
+                <button type="button" class="btn btn-outline btn-sm quick-view-btn" data-product-id="seed-packet-1" aria-label="Quick view Sunburst Wildflower Meadow Seed Packet details">
+                  Quick View
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2: Seed Packet 2 -->
+          <article class="product-card" data-category="seeds" aria-labelledby="prod-2-title">
+            <div class="product-badge-group">
+              <span class="product-badge new">New Harvest</span>
+              <span class="product-badge fragrant">Fragrant</span>
+            </div>
+            <figure class="product-figure">
+              <img src="./assets/seed-packet2.webp" alt="Pastel Cottage Garden Sweet Pea and Botanical Seed Packet" class="product-img" loading="lazy" width="360" height="360">
+            </figure>
+            <div class="product-body">
+              <div class="product-meta">
+                <span class="product-category">Climbers & Cut Flowers</span>
+                <span class="product-rating" aria-label="Rated 4.8 out of 5 stars">★ 4.8 (94)</span>
+              </div>
+              <h3 id="prod-2-title" class="product-title">Pastel Cottage Garden Heirloom Seed Packet</h3>
+              <p class="product-desc">
+                Vintage English-cottage varieties featuring fragrant sweet peas, spired larkspur, and heirloom foxgloves. Exceptional stems for vase arrangements and trellis borders.
+              </p>
+              <ul class="product-specs" aria-label="Pastel Cottage Specifications">
+                <li><strong>Light:</strong> Partial to Full Sun</li>
+                <li><strong>Germination:</strong> 10–18 Days</li>
+                <li><strong>Bloom Time:</strong> Early Summer to Frost</li>
+              </ul>
+              <div class="product-footer">
+                <div class="product-price">
+                  <span class="price-current">$9.00</span>
+                  <span class="price-unit">/ packet</span>
+                </div>
+                <button type="button" class="btn btn-outline btn-sm quick-view-btn" data-product-id="seed-packet-2" aria-label="Quick view Pastel Cottage Garden Heirloom Seed Packet details">
+                  Quick View
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3: Rose Bouquet Selection -->
+          <article class="product-card" data-category="bouquets" aria-labelledby="prod-3-title">
+            <div class="product-badge-group">
+              <span class="product-badge artisan">Handcrafted</span>
+            </div>
+            <figure class="product-figure product-figure-badge">
+              <img src="./assets/rose-icon.webp" alt="Artisan Velvet Garden Rose and Seasonal Eucalyptus arrangement badge" class="product-img product-img-contain" loading="lazy" width="512" height="512">
+            </figure>
+            <div class="product-body">
+              <div class="product-meta">
+                <span class="product-category">Fresh Floral Bouquet</span>
+                <span class="product-rating" aria-label="Rated 5.0 out of 5 stars">★ 5.0 (82)</span>
+              </div>
+              <h3 id="prod-3-title" class="product-title">Velvet Rose & Silver Dollar Eucalyptus</h3>
+              <p class="product-desc">
+                Hand-tied bouquet featuring garden-grown English roses, aromatic silver dollar eucalyptus, and seasonal textural foliage. Shipped in our hydration wrap.
+              </p>
+              <ul class="product-specs" aria-label="Bouquet Specifications">
+                <li><strong>Vase Life:</strong> 7–10 Days</li>
+                <li><strong>Fragrance:</strong> Mild Sweet Floral</li>
+                <li><strong>Packaging:</strong> Recycled Kraft Paper Wrap</li>
+              </ul>
+              <div class="product-footer">
+                <div class="product-price">
+                  <span class="price-current">$48.00</span>
+                  <span class="price-unit">/ bouquet</span>
+                </div>
+                <button type="button" class="btn btn-outline btn-sm quick-view-btn" data-product-id="rose-bouquet" aria-label="Quick view Velvet Rose & Silver Dollar Eucalyptus bouquet details">
+                  Quick View
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 4: Garden Starter Kit -->
+          <article class="product-card" data-category="kits" aria-labelledby="prod-4-title">
+            <div class="product-badge-group">
+              <span class="product-badge gift">Complete Kit</span>
+            </div>
+            <figure class="product-figure product-figure-badge">
+              <img src="./assets/Icon.webp" alt="Flowers For You complete garden starter seedling kit with branded marker" class="product-img product-img-contain" loading="lazy" width="794" height="794">
+            </figure>
+            <div class="product-body">
+              <div class="product-meta">
+                <span class="product-category">Cultivation Kit</span>
+                <span class="product-rating" aria-label="Rated 4.9 out of 5 stars">★ 4.9 (115)</span>
+              </div>
+              <h3 id="prod-4-title" class="product-title">Botanical Cultivator Gift Box</h3>
+              <p class="product-desc">
+                Includes both heirloom seed packets, 6 biodegradable peat seedling pots, compressed organic coconut coir pellets, zinc botanical markers, and our garden calendar.
+              </p>
+              <ul class="product-specs" aria-label="Kit Specifications">
+                <li><strong>Includes:</strong> 2 Seed Packets + 6 Pots</li>
+                <li><strong>Skill Level:</strong> All Gardeners</li>
+                <li><strong>Box:</strong> 100% Recycled Gift Packaging</li>
+              </ul>
+              <div class="product-footer">
+                <div class="product-price">
+                  <span class="price-current">$26.50</span>
+                  <span class="price-unit">/ box</span>
+                </div>
+                <button type="button" class="btn btn-outline btn-sm quick-view-btn" data-product-id="starter-kit" aria-label="Quick view Botanical Cultivator Gift Box details">
+                  Quick View
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Core Content: Services & Pricing Menu -->
+    <section id="services" class="services-section" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-intro text-center">
+          <span class="section-badge">Bespoke Offerings</span>
+          <h2 id="services-title" class="section-title">Floristry Services & Garden Menus</h2>
+          <p class="section-subtitle">
+            Beyond our seed packets, we offer custom floral styling, recurring garden subscriptions, and hands-on botanical workshops.
+          </p>
+        </div>
+
+        <div class="services-table-wrapper" role="region" aria-label="Floral Services and Pricing Menu" tabindex="0">
+          <table class="services-table">
+            <caption class="sr-only">Detailed breakdown of floral styling services, descriptions, and pricing</caption>
+            <thead>
+              <tr>
+                <th scope="col">Service / Offering</th>
+                <th scope="col">Description</th>
+                <th scope="col">Timeline</th>
+                <th scope="col">Starting Price</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="service-name">Monthly Heirloom Seed Club</th>
+                <td>Two seasonal heirloom seed packets plus detailed care cards delivered each month.</td>
+                <td>Monthly Delivery</td>
+                <td class="service-cost">$16.00 <span class="billing-frequency">/ mo</span></td>
+                <td><a href="#contact" class="btn btn-sm btn-ghost">Subscribe</a></td>
+              </tr>
+              <tr>
+                <th scope="row" class="service-name">Bespoke Bridal & Event Florals</th>
+                <td>Custom bouquets, boutonnières, ceremony arches, and meadow-style floral centerpieces.</td>
+                <td>Book 2+ weeks prior</td>
+                <td class="service-cost">$175.00 <span class="billing-frequency">/ event</span></td>
+                <td><a href="#contact" class="btn btn-sm btn-ghost">Inquire</a></td>
+              </tr>
+              <tr>
+                <th scope="row" class="service-name">Botanical Garden Sowing Workshop</th>
+                <td>2-hour hands-on studio masterclass on soil balancing, seed sowing, and flower drying.</td>
+                <td>Every 2nd Saturday</td>
+                <td class="service-cost">$35.00 <span class="billing-frequency">/ seat</span></td>
+                <td><a href="#contact" class="btn btn-sm btn-ghost">Reserve</a></td>
+              </tr>
+              <tr>
+                <th scope="row" class="service-name">Corporate & Studio Greenery Styling</th>
+                <td>Bi-weekly floral rotations and potted botanicals tailored for cafes, offices, and boutiques.</td>
+                <td>Bi-Weekly Maintenance</td>
+                <td class="service-cost">$120.00 <span class="billing-frequency">/ mo</span></td>
+                <td><a href="#contact" class="btn btn-sm btn-ghost">Get Quote</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Interactive Component Container Landmark -->
+    <section id="interactive" class="interactive-section" aria-labelledby="interactive-title">
+      <div class="container">
+        <div class="section-intro text-center">
+          <span class="section-badge">Interactive Garden Tools</span>
+          <h2 id="interactive-title" class="section-title">Interactive Plant Matcher & Sprout Guide</h2>
+          <p class="section-subtitle">
+            Filter our catalog by category, find which heirloom seeds match your growing space, or discover quick answers to common bloom questions.
+          </p>
+        </div>
+
+        <!-- Interactive Component Wrapper -->
+        <div class="interactive-container">
+
+          <!-- Feature 1: Filterable Product Category Bar -->
+          <div class="filter-widget" role="region" aria-label="Filter catalog by product category">
+            <h3 class="interactive-subheading">1. Quick Filter Catalog</h3>
+            <div class="filter-button-group" role="group" aria-label="Filter flower and seed products">
+              <button type="button" class="filter-chip active" data-filter="all" aria-pressed="true">
+                All Items (4)
+              </button>
+              <button type="button" class="filter-chip" data-filter="seeds" aria-pressed="false">
+                Heirloom Seeds (2)
+              </button>
+              <button type="button" class="filter-chip" data-filter="bouquets" aria-pressed="false">
+                Fresh Bouquets (1)
+              </button>
+              <button type="button" class="filter-chip" data-filter="kits" aria-pressed="false">
+                Gardener Kits (1)
+              </button>
+            </div>
+            <p id="filter-status" class="filter-status-message" aria-live="polite">Showing all items.</p>
+          </div>
+
+          <!-- Feature 2: Interactive Plant Matcher Tool -->
+          <div class="matcher-widget" role="region" aria-labelledby="matcher-title">
+            <div class="matcher-header">
+              <h3 id="matcher-title" class="interactive-subheading">2. Find Your Ideal Garden Match</h3>
+              <p class="matcher-hint">Select your garden's sunlight, space, and experience level below to find the best botanical match.</p>
+            </div>
+
+            <form id="plant-matcher-form" class="matcher-form" novalidate>
+              <div class="matcher-grid">
+                <!-- Sunlight Select -->
+                <div class="form-field">
+                  <label for="matcher-sunlight" class="field-label">Sunlight Level</label>
+                  <select id="matcher-sunlight" name="sunlight" class="field-select" required aria-required="true">
+                    <option value="" disabled selected>Select sunlight condition...</option>
+                    <option value="full-sun">Full Sun (6+ hours direct sunlight)</option>
+                    <option value="partial-sun">Partial Sun / Dappled Light (3–5 hours)</option>
+                    <option value="indirect-light">Bright Indirect / Indoor Light</option>
+                  </select>
+                </div>
+
+                <!-- Space Select -->
+                <div class="form-field">
+                  <label for="matcher-space" class="field-label">Available Space</label>
+                  <select id="matcher-space" name="space" class="field-select" required aria-required="true">
+                    <option value="" disabled selected>Select your planting area...</option>
+                    <option value="garden-bed">Open Garden Bed / Meadow Border</option>
+                    <option value="balcony-pots">Balcony Railing or Patio Planters</option>
+                    <option value="indoor-sill">Indoor Windowsill or Kitchen Counter</option>
+                  </select>
+                </div>
+
+                <!-- Gardener Goal / Level -->
+                <div class="form-field">
+                  <label for="matcher-goal" class="field-label">Primary Goal</label>
+                  <select id="matcher-goal" name="goal" class="field-select" required aria-required="true">
+                    <option value="" disabled selected>Select your gardening goal...</option>
+                    <option value="pollinators">Attract Bees & Butterflies</option>
+                    <option value="fragrance">Fragrant Cut Flowers for Vases</option>
+                    <option value="starter">Easy Starter Kit for Beginners</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="matcher-actions">
+                <button type="submit" class="btn btn-primary" id="btn-match-submit">
+                  Find My Botanical Match
+                </button>
+                <button type="reset" class="btn btn-outline" id="btn-match-reset">
+                  Reset
+                </button>
+              </div>
+            </form>
+
+            <!-- Dynamic Matcher Result Output Container -->
+            <div id="matcher-result" class="matcher-result-box" role="status" aria-live="polite">
+              <div class="result-placeholder">
+                <span class="placeholder-icon" aria-hidden="true">🌱</span>
+                <p>Select your planting conditions and click <strong>"Find My Botanical Match"</strong> to generate a custom growing recommendation!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 3: Interactive FAQ Accordion -->
+          <div class="faq-widget" role="region" aria-labelledby="faq-title">
+            <h3 id="faq-title" class="interactive-subheading">3. Frequently Asked Questions</h3>
+            <div class="accordion" id="faq-accordion">
+
+              <!-- FAQ Item 1 -->
+              <div class="accordion-item">
+                <h4 class="accordion-heading">
+                  <button type="button" class="accordion-trigger" id="faq-trigger-1" aria-expanded="false" aria-controls="faq-panel-1">
+                    <span>How long do your heirloom flower seeds stay fresh?</span>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                  </button>
+                </h4>
+                <div id="faq-panel-1" class="accordion-panel" role="region" aria-labelledby="faq-trigger-1" hidden>
+                  <div class="accordion-content">
+                    <p>When stored in a dry, dark, and cool environment (such as a sealed glass jar or paper envelope away from sunlight), our seeds remain viable with high germination rates for 2 to 3 years. Every seed packet lists the harvest test batch date on the back.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="accordion-item">
+                <h4 class="accordion-heading">
+                  <button type="button" class="accordion-trigger" id="faq-trigger-2" aria-expanded="false" aria-controls="faq-panel-2">
+                    <span>Can I grow the Wildflower Meadow mix in pots or containers?</span>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                  </button>
+                </h4>
+                <div id="faq-panel-2" class="accordion-panel" role="region" aria-labelledby="faq-trigger-2" hidden>
+                  <div class="accordion-content">
+                    <p>Yes! Simply choose planters or window boxes with adequate drainage holes that are at least 8 to 10 inches deep. Scatter seeds lightly over premium potting soil, press gently into the surface, and keep moist until germination.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="accordion-item">
+                <h4 class="accordion-heading">
+                  <button type="button" class="accordion-trigger" id="faq-trigger-3" aria-expanded="false" aria-controls="faq-panel-3">
+                    <span>How does local floral delivery work?</span>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                  </button>
+                </h4>
+                <div id="faq-panel-3" class="accordion-panel" role="region" aria-labelledby="faq-trigger-3" hidden>
+                  <div class="accordion-content">
+                    <p>For fresh bouquets, we offer hand-delivered orders within a 20-mile radius. Orders placed before 11:00 AM qualify for same-day delivery. Seed packets and gift boxes ship nationwide via carbon-neutral postal carrier in 2–4 business days.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Contact / Direct Inquiry Section Landmark -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-intro text-center">
+          <span class="section-badge">Get in Touch</span>
+          <h2 id="contact-title" class="section-title">We’d Love To Help You Bloom</h2>
+          <p class="section-subtitle">
+            Whether you need custom flower consultation, wholesale seed packet pricing, or growing advice, send us a note or stop by our botanical studio.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+
+          <!-- Direct Contact Information Cards -->
+          <div class="contact-info-column" aria-label="Direct contact details">
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="info-content">
+                <h3 class="info-heading">Studio & Garden Shop</h3>
+                <address class="info-text">
+                  428 Blossom Hill Lane, Suite 104<br>
+                  Portland, Oregon 97201
+                </address>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="info-content">
+                <h3 class="info-heading">Phone & Inquiries</h3>
+                <p class="info-text">
+                  <a href="tel:+15035550182" class="contact-link" aria-label="Call Flowers For You at (503) 555-0182">(503) 555-0182</a><br>
+                  <span class="info-subtext">Mon–Sat: 8:00 AM – 6:00 PM PST</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="info-content">
+                <h3 class="info-heading">Email Address</h3>
+                <p class="info-text">
+                  <a href="mailto:hello@flowersforyou.com" class="contact-link" aria-label="Send email to hello@flowersforyou.com">hello@flowersforyou.com</a><br>
+                  <span class="info-subtext">Replies typically within 24 hours</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card highlight-card">
+              <div class="info-icon" aria-hidden="true">
+                <img src="./assets/rose-icon.webp" alt="" width="26" height="26">
+              </div>
+              <div class="info-content">
+                <h3 class="info-heading">Custom Wedding Consultations</h3>
+                <p class="info-text">
+                  Planning a special day? Inquire early to lock in your seasonal bridal and wedding table arrangement dates!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Functional Static Contact Form UI -->
+          <div class="contact-form-column">
+            <form id="contact-form" class="contact-form" novalidate aria-label="Contact Flowers For You Form">
+              <h3 class="form-title">Send Us a Direct Message</h3>
+              <p class="form-instructions">Fields marked with an asterisk (<span class="required" aria-hidden="true">*</span>) are required.</p>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="contact-name" class="field-label">
+                    Full Name <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input type="text" id="contact-name" name="name" class="field-input" required aria-required="true" autocomplete="name" placeholder="E.g., Clara Davis">
+                  <span class="field-error" id="name-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-email" class="field-label">
+                    Email Address <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input type="email" id="contact-email" name="email" class="field-input" required aria-required="true" autocomplete="email" placeholder="clara@example.com">
+                  <span class="field-error" id="email-error" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="contact-subject" class="field-label">Subject / Purpose</label>
+                  <select id="contact-subject" name="subject" class="field-select">
+                    <option value="seed-inquiry">Seed Packet Growing Advice / Wholesale</option>
+                    <option value="fresh-bouquet">Custom Floral Bouquet Order</option>
+                    <option value="wedding-event">Wedding or Special Event Styling</option>
+                    <option value="workshop">Garden Sowing Workshop Reservation</option>
+                    <option value="general">General Question</option>
+                  </select>
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-phone" class="field-label">Phone Number (Optional)</label>
+                  <input type="tel" id="contact-phone" name="phone" class="field-input" autocomplete="tel" placeholder="(503) 000-0000">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-message" class="field-label">
+                  Your Message <span class="required" aria-hidden="true">*</span>
+                </label>
+                <textarea id="contact-message" name="message" class="field-textarea" rows="5" required aria-required="true" placeholder="Tell us about your garden space, floral desires, or questions..."></textarea>
+                <span class="field-error" id="message-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-field form-checkbox-field">
+                <label class="checkbox-container">
+                  <input type="checkbox" id="newsletter-opt-in" name="newsletter" class="checkbox-input" checked>
+                  <span class="checkbox-custom" aria-hidden="true"></span>
+                  <span class="checkbox-label">Keep me updated with seasonal planting tips and heirloom seed discounts.</span>
+                </label>
+              </div>
+
+              <div class="form-submit-wrapper">
+                <button type="submit" class="btn btn-primary btn-submit" id="submit-contact-btn">
+                  <span>Send Message</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Form Submission Status Live Region -->
+              <div id="contact-form-status" class="form-status-alert" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Quick View Modal Dialog Landmark -->
+  <dialog id="quick-view-dialog" class="product-dialog" aria-labelledby="dialog-title" aria-modal="true">
+    <div class="dialog-content">
+      <button type="button" class="dialog-close-btn" id="close-dialog-btn" aria-label="Close product quick view dialog">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="dialog-grid">
+        <div class="dialog-image-col">
+          <img id="dialog-img" src="./assets/seed-packet1.jpg" alt="Botanical seed packet" class="dialog-img">
+        </div>
+        <div class="dialog-info-col">
+          <span id="dialog-category" class="dialog-category">Heirloom Seeds</span>
+          <h3 id="dialog-title" class="dialog-title">Product Name</h3>
+          <p id="dialog-price" class="dialog-price">$8.50</p>
+          <p id="dialog-description" class="dialog-description">Product detailed description appears here.</p>
+          <div class="dialog-meta-specs" id="dialog-specs">
+            <!-- Dynamic specs -->
+          </div>
+          <div class="dialog-actions">
+            <a href="#contact" class="btn btn-primary" id="dialog-inquiry-link">Order / Inquire</a>
+            <button type="button" class="btn btn-outline" id="dialog-close-secondary">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Footer Landmark -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand Info -->
+        <div class="footer-col brand-col">
+          <a href="./index.html" class="footer-brand-link" aria-label="Flowers For You Homepage">
+            <img src="./assets/Icon.webp" alt="Flowers For You Logo" class="footer-logo" width="40" height="40" loading="lazy">
+            <span class="footer-brand-name">Flowers For You</span>
+          </a>
+          <p class="footer-bio">
+            Nurturing connections through nature. We craft fresh artisanal floral creations and supply heirloom, open-pollinated seed packets for gardens of every size.
+          </p>
+          <div class="footer-socials" aria-label="Social media links">
+            <a href="https://instagram.com" class="social-icon-link" aria-label="Follow Flowers For You on Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://pinterest.com" class="social-icon-link" aria-label="Follow Flowers For You on Pinterest" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 12a4 4 0 0 0 7.5 2"></path>
+              </svg>
+            </a>
+            <a href="https://facebook.com" class="social-icon-link" aria-label="Follow Flowers For You on Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col links-col">
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero" class="footer-link">Home Overview</a></li>
+            <li><a href="#about" class="footer-link">Our Heritage</a></li>
+            <li><a href="#products" class="footer-link">Seed & Floral Catalog</a></li>
+            <li><a href="#services" class="footer-link">Services & Pricing</a></li>
+            <li><a href="#interactive" class="footer-link">Plant Matcher Tool</a></li>
+            <li><a href="#contact" class="footer-link">Contact & Inquiries</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Gardening Resources -->
+        <div class="footer-col resources-col">
+          <h4 class="footer-heading">Planting Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#interactive" class="footer-link">Heirloom Sowing Calendar</a></li>
+            <li><a href="#interactive" class="footer-link">Pollinator Garden Tips</a></li>
+            <li><a href="#interactive" class="footer-link">Vase Life Preservation 101</a></li>
+            <li><a href="#about" class="footer-link">Non-GMO Seed Pledge</a></li>
+            <li><a href="#services" class="footer-link">Workshops & Events</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter Signup -->
+        <div class="footer-col newsletter-col">
+          <h4 class="footer-heading">Join The Garden Club</h4>
+          <p class="newsletter-desc">
+            Receive monthly planting reminders, harvest stories, and 10% off your first seed packet order.
+          </p>
+          <form id="newsletter-form" class="newsletter-form" novalidate aria-label="Join Garden Club Newsletter">
+            <div class="newsletter-input-group">
+              <label for="newsletter-email" class="sr-only">Email address for newsletter</label>
+              <input type="email" id="newsletter-email" name="newsletter_email" class="newsletter-input" placeholder="Your email address" required aria-required="true">
+              <button type="submit" class="btn btn-primary btn-newsletter" aria-label="Subscribe to Garden Club newsletter">
+                Join
+              </button>
+            </div>
+            <div id="newsletter-status" class="newsletter-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 Flowers For You. All rights reserved. Handcrafted with care for botanical lovers.
+        </p>
+        <div class="footer-legal-links">
+          <a href="#hero" class="legal-link">Privacy Policy</a>
+          <span class="legal-sep" aria-hidden="true">•</span>
+          <a href="#hero" class="legal-link">Terms of Service</a>
+          <span class="legal-sep" aria-hidden="true">•</span>
+          <a href="#hero" class="back-to-top" aria-label="Back to top of page">
+            <span>Back to top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Relative JavaScript Link -->
+  <script src="./script.js"></script>
+</body>
+</html>
